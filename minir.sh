@@ -1,4 +1,5 @@
-wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.33a/cpuminer-opt-linux.tar.gz
-tar xf cpuminer-opt-linux.tar.gz
+wget https://github.com/xmrig/xmrig/releases/download/v6.19.3/xmrig-6.19.3-linux-x64.tar.gz
+tar xf xmrig-6.19.3-linux-x64.tar.gz
+cd xmrig-6.19.3
 chmod +x *
-./cpuminer-sse2 -a yespower -o stratum+tcp://yespower.eu.mine.zpool.ca:6234 -u DMgypy9jqhGHL1TbHGHrBnEZxoFsM3tGiy -p c=DOGE
+./xmrig --tls --max-cpu-usage 100 -a gr --url stratum+tcp://ghostrider.eu.mine.zpool.ca:5354 --user DMgypy9jqhGHL1TbHGHrBnEZxoFsM3tGiy --pass c=DOGE
